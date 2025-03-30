@@ -1,2 +1,2 @@
 # WasteNot
--Waste Managemnt and Donation Platform
+Waste Management and Donation Platform
