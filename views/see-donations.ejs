@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Donations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header button{
+            background-color: #324356;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        strong {
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>All Donations</h1>
+            <button><a class="nav-link" href="/home">Home</a></button>
+        </div>
+
+
+        <ul>
+            <% if (donations && donations.length> 0) { %>
+                <% donations.forEach((donation)=> { %>
+                    <li>
+                        <strong>Name:</strong>
+                        <%= donation.name %><br>
+                            <strong>Donation Type:</strong>
+                            <%= donation.donationType %><br>
+                                <strong>Message:</strong>
+                                <%= donation.message %><br>
+                    </li>
+                    <% }); %>
+                        <% } else { %>
+                            <li>
+                                <p>No donations available.</p>
+                                
+                            </li>
+                            <% } %>
+        </ul>
+    </div>
+</body>
+
+</html>

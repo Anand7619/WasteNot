@@ -1,0 +1,83 @@
+
+
+    body {
+        background: linear-gradient(135deg, #2b1055, #7597de);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-box {
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 40px;
+        display: flex;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-section {
+        width: 50%;
+        color: #fff;
+        padding-right: 30px;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .right-section {
+        width: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    input {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: none;
+        color: #fff;
+    }
+
+    input::placeholder {
+        color: #ddd;
+    }
+
+    .btn-primary {
+        width: 100%;
+        background: #4c00ff;
+        border: none;
+        padding: 10px;
+    }
+
+    .google-btn {
+        background: #db4437;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .google-btn img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-box {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .left-section,
+        .right-section {
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
