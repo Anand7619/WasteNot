@@ -39,7 +39,7 @@ Ensure you have the following installed:
    ```sh
    cd src
    ```
-  **in mongodb.js and config.js include your correct database name**
+     **in mongodb.js and config.js include your correct database name**
 
   
 3. **Run the Server**
