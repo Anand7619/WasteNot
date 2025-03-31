@@ -43,6 +43,8 @@ Ensure you have the following installed:
 
   
 3. **Run the Server**
+
+   
    you can adjust the port no in server.js file
    ```sh
    node server.js
@@ -50,7 +52,7 @@ Ensure you have the following installed:
    The server will start on `http://localhost:5000`
    Depending on your port
 
-4. **Access the Application**
+5. **Access the Application**
    Open your browser and visit:
    ```
    http://localhost:5000
