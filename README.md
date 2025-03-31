@@ -36,21 +36,19 @@ Ensure you have the following installed:
    ```sh
    npm install
    ```
-3.**Enter into src folder**
    ```sh
    cd src
    ```
-  in mongodb.js and config.js include your correct database name
+  **in mongodb.js and config.js include your correct database name**
 3. **Run the Server**
    you can adjust the port no in server.js file
    ```sh
-   cd src
    node server.js
    ```
    The server will start on `http://localhost:5000`
    Depending on your port
 
-5. **Access the Application**
+4. **Access the Application**
    Open your browser and visit:
    ```
    http://localhost:5000
